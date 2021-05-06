@@ -6,7 +6,7 @@ section{
 
 #download-container{
     height: auto;
-    margin-top: 100px;
+    margin-top: 120px;
     margin-left: calc(50% - 340px);
     display: flex;
 }
