@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "images/favicon/main-favicon.png">
+    <link rel = "alternate" hreflang = "it" href = "it-IT/curriculum.html" />
+    <link rel = "alternate" hreflang = "en" href = "curriculum.html" />
+    <link rel = "stylesheet" href = "stylesheets/default.css">
+    <link rel = "stylesheet" href = "stylesheets/curriculum.css">
+    <link rel = "stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <script src = "javascripts/mobile-menu.js"></script>
+    <title>Alessandro Ravizzotti</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Alessandro&nbsp;Ravizzotti</a>
+            <div id="menu">
+                <a href="">Progetti</a>
+                <a href="curriculum.html">Curriculum</a>
+                <a href="">Contatti</a>
+            </div>
+
+            <a id="menu-button" onclick = "showMenu(this)">
+                <div class="menu-icon top"></div>
+                <div class="menu-icon central"></div>
+                <div class="menu-icon bot"></div> 
+            </a>
+        </nav>
+    </header>
+
+    <h1>Curriculum</h1>
+
+    <section>
+        Hi, I am Alessandro.
+        <br>I'm studying computer science at "Università degli Studi di Milano".
+        <br>
+        <br>In 2016-2017 I applied to senior year of high school in Maine (USA). Most interesting subjects: graphics and photo editing with GIMP and 3D game design with UNITY.
+        <br>
+        <br>Computer languages: C, Go, Java, Python, HTML, CSS, Javascript, PHP, SQL.
+        <br>
+        <br>Subjects of interest: Cyber&nbsp;Security, Privacy, Cryptography, Biometrics, Web&nbsp;Development.
+        <br>
+        <br>Hobbies: I like to play the guitar, listen to music and podcast.
+        <br>
+        <br class="mobile-remove">
+        <br>If you want to check my CV, you can download it down here :)
+    </section>
+
+    <div id="download-container">
+        <a class="download-button" href="curriculum/Alessandro Ravizzotti - Curriculum ITA.pdf" download>
+            <div class="button">
+                Download ITA
+            </div>
+        </a>
+
+        <a class="download-button" href="curriculum/Alessandro Ravizzotti - Curriculum ENG.pdf" download>
+            <div class="button">
+                Download ENG
+            </div>
+        </a>
+    </div>
+
+    <footer>
+        <p>Copyright&nbsp;&copy;&nbsp;2021</p>
+    </footer>
+    <script src="javascripts/set-image.js"></script>
+    <script>
+        var lang = navigator.language;
+        if (lang == "it" || lang == "it-IT") window.location.replace("it-IT/curriculum.html");
+    </script>
+</body>
+</html>
+<!--Copyright © 2021 Made by Alessandro Ravizzotti-->

@@ -1,0 +1,59 @@
+section{
+    width: 75%;
+    margin-left: 12.5%;
+    font-size: 25px;
+}
+
+#download-container{
+    height: auto;
+    margin-top: 100px;
+    margin-left: calc(50% - 340px);
+    display: flex;
+}
+
+.download-button{
+    background-color: var(--bg);
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 60px;
+    width: 300px;
+    border: 2px solid var(--bg);
+    border-radius: 5px;
+}
+
+.button{
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 900px) {
+    #download-container{
+        margin-top: 50px;
+        margin-left: calc(50% - 170px);
+        display: inherit;   
+    }
+    
+    .download-button{
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .button{
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section{
+        font-size: 20px;
+    }
+
+    #download-container{
+        margin-top: 40px;
+        margin-left: calc(50% - 145px);  
+    }
+
+    .download-button{
+        width: 250px;
+    }
+}

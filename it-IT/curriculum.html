@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "images/favicon/main-favicon.png">
+    <link rel = "alternate" hreflang = "it" href = "curriculum.html" />
+    <link rel = "alternate" hreflang = "en" href = "../curriculum.html" />
+    <link rel = "stylesheet" href = "../stylesheets/default.css">
+    <link rel = "stylesheet" href = "../stylesheets/curriculum.css">
+    <link rel = "stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <script src = "../javascripts/mobile-menu.js"></script>
+    <title>Alessandro Ravizzotti</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Alessandro&nbsp;Ravizzotti</a>
+            <div id="menu">
+                <a href="">Projects</a>
+                <a href="curriculum.html">Curriculum</a>
+                <a href="">Contacts</a>
+            </div>
+
+            <a id="menu-button" onclick = "showMenu(this)">
+                <div class="menu-icon top"></div>
+                <div class="menu-icon central"></div>
+                <div class="menu-icon bot"></div> 
+            </a>
+        </nav>
+    </header>
+
+    <h1>Curriculum</h1>
+
+    <section>
+        Ciao, io sono Alessandro.
+        <br>Studio informatica all'Università degli Studi di Milano.
+        <br>
+        <br>L'anno scolastico di 4° superiore (2016-2017) l'ho vissuto come exchange studente in Maine (USA). Le materie più interessanti studiate: grafica e photo editing con GIMP e 3D game design con UNITY.
+        <br>
+        <br>Linguaggi al computer : C, Go, Java, Python, HTML, CSS, Javascript, PHP, SQL.
+        <br>
+        <br>Materie di interesse: Sicurezza&nbsp;Informatica, Privacy, Crittografia, Biometria, Programmazione&nbsp;Web.
+        <br>
+        <br>Nel mio tempo libero mi piace suonare la chitarra e ascoltare la musica e i podcast.
+        <br>
+        <br class = "mobile-remove">
+        <br>Se vuoi guardare il mio Curriculum, lo puoi scaricare cliccando qua sotto :)
+    </section>
+
+    <div id="download-container">
+        <a class="download-button" href="../curriculum/Alessandro Ravizzotti - Curriculum ITA.pdf" download>
+            <div class="button">
+                Download ITA
+            </div>
+        </a>
+
+        <a class="download-button" href="../curriculum/Alessandro Ravizzotti - Curriculum ENG.pdf" download>
+            <div class="button">
+                Download ENG
+            </div>
+        </a>
+    </div>
+
+    <footer>
+        <p>Copyright&nbsp;&copy;&nbsp;2021</p>
+    </footer>
+    <script src = "../javascripts/set-image.js"></script>
+    <script>
+        var lang = navigator.language;
+        if (lang == "en") window.location.replace("../curriculum.html");
+    </script>
+</body>
+</html>
+<!--Copyright © 2021 Made by Alessandro Ravizzotti-->

@@ -1,0 +1,141 @@
+:root {
+    --white: #f2f2f2;
+    --black: #000000;
+    --bg: rgb(89, 156, 165);
+    --bg-mobile: rgba(40, 40, 40, 0.8);
+}
+
+html, body{
+    width: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+    text-align: center;
+    font-family: 'Montserrat';
+    color: var(--black);
+}
+
+header{
+    width: 100%;
+    text-align: left;
+    background-color: var(--bg);
+}
+
+nav{
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+#menu{
+    float: right;
+}
+
+#menu-button{
+    display: none;
+    cursor: pointer;
+    margin-top: -5px;
+}
+
+.menu-icon {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+    background-color: var(--white);
+}
+
+.change .top {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .central {
+    opacity: 0%;
+}
+
+.change .bot {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--white);  
+    text-shadow: 1px 2px var(--black); 
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 70px;
+}
+
+footer{
+    position: fixed;
+    width: 100%;  
+    bottom: 0%; 
+    left: 0%;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 900px) {
+    a{
+        margin-left: 4px;
+        margin-right: 4px;
+        font-size: 25px;
+    }
+
+    #menu:not(.new) {
+        top: -110vh;
+        opacity: 0%;
+        transition: 0.5s;
+    }
+
+    #menu {
+        position: absolute;
+        height: calc(100% - 50px);
+        width: 100%;
+        overflow: hidden;
+        padding-top: 50px;
+        top: 0%;
+        right: 0%;
+        text-align: center;
+        background-color: var(--bg-mobile);
+        transition: 0.5s;
+    }
+
+    #menu > a {
+        color: var(--white);
+        float: none;
+        position: relative;
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 40px;
+    }
+
+    #menu-button {
+        float: right;
+        display: block;
+        cursor: pointer;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    footer{
+        position: inherit;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 30px;
+    }
+}
