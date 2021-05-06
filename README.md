@@ -1,4 +1,4 @@
 # personalWebPage
 Just my personal web page :)
 
-https://github.com/itsraval/personalWebPage
+ https://itsraval.github.io/personalWebPage/
