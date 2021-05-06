@@ -134,3 +134,29 @@ article{
         margin-left: 20px;
     }
 }
+
+@media screen and (max-width: 500px) {
+
+    .left-container{
+        width: 100%;
+        display: inherit;
+        margin: 0;
+    }
+        
+    .link-container{
+        /* margin-left: calc(50% - 210px); */
+        display: flex;  
+        margin-left: 0px;
+    }
+    
+    .link-button{
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 50px;
+        width: 150px;
+    }
+
+    .button{
+        margin-top: 10px;
+    }
+}
