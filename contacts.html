@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "images/favicon/main-favicon.png">
+    <link rel = "alternate" hreflang = "it" href = "it-IT/curriculum.html" />
+    <link rel = "alternate" hreflang = "en" href = "curriculum.html" />
+    <link rel = "stylesheet" href = "stylesheets/default.css">
+    <link rel = "stylesheet" href = "stylesheets/contacts.css">
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <script src = "javascripts/mobile-menu.js"></script>
+    <title>Alessandro Ravizzotti</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Alessandro&nbsp;Ravizzotti</a>
+            <div id="menu">
+                <a href="projects.html">Projects</a>
+                <a href="curriculum.html">Curriculum</a>
+                <a href="contacts.html">Contacts</a>
+            </div>
+
+            <a id="menu-button" onclick = "showMenu(this)">
+                <div class="menu-icon top"></div>
+                <div class="menu-icon central"></div>
+                <div class="menu-icon bot"></div> 
+            </a>
+        </nav>
+    </header>
+
+    <h1>Contacts</h1>
+
+    <main>
+        <div id="left-container">
+            <img src="images/profile-contacts.png" alt="profile contacts">
+            <h2>Alessandro&nbsp;Ravizzotti</h2>
+        </div>
+
+        <div id="contacts-container">
+            <ul>
+                <li>
+                    <a href="mailto:raviz.ale@gmail.com">
+                        <img class="icon" src="images/icons/gmail.png" alt="gmail">
+                        <div class="link">
+                            raviz.ale@gmail.com
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/itsraval" target="_blank">
+                        <img class="icon" src="images/icons/github.png" alt="github">
+                        <div class="link">
+                            GitHub
+                        </div> 
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/alessandro-ravizzotti-a79a74169/" target="_blank">
+                        <img class="icon" src="images/icons/linkedin.png" alt="linkedin">
+                        <div class="link">
+                            LinkedIn
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/alessandro.ravizzotti" target="_blank">
+                        <img class="icon" src="images/icons/facebook.png" alt="facebook">
+                        <div class="link">
+                            Facebook
+                        </div>   
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/itsraval/" target="_blank">
+                        <img class="icon" src="images/icons/instagram.png" alt="Instagram">
+                        <div class="link">
+                            Instagram
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright&nbsp;&copy;&nbsp;2021</p>
+    </footer>
+    <script src="javascripts/set-image.js"></script>
+    <script>
+        var lang = navigator.language;
+        if (lang == "it" || lang == "it-IT") window.location.replace("it-IT/contacts.html");
+    </script>
+</body>
+</html>
+<!--Copyright © 2021 Made by Alessandro Ravizzotti-->
