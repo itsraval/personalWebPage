@@ -1,20 +1,12 @@
 :root {
     --white: #f2f2f2;
-    --black: #1c110a;
-    /* --bg: rgb(89, 156, 165); */
-    --bg: #a95e17;
-    
+    --blue: #1d4e89;
+    --inRange: #8A8441;
+    --yellow: #f5b700;
+    --blueT: rgba(29, 78, 137, 0.8);
+    --yellowT: rgba(245, 183, 0, 0.8);
 
-    /* 779ECC
-    D06E3F
-    DE9250
-
-    53a2be
-    57b8ff
-    009ddc
-    
-    */
-    --bg-mobile: rgba(40, 40, 40, 0.8);
+    --bgDark: #2e2e2e;
 }
 
 html, body{
@@ -23,13 +15,13 @@ html, body{
     overflow-x: hidden;
     text-align: center;
     font-family: 'Montserrat';
-    color: var(--black);
+    color: var(--blue);
 }
 
 header{
     width: 100%;
     text-align: left;
-    background-color: var(--bg);
+    background: linear-gradient(to right, var(--blue), var(--yellow));
 }
 
 nav{
@@ -76,7 +68,7 @@ a{
     text-decoration: none;
     font-size: 30px;
     color: var(--white);  
-    text-shadow: 1px 1px var(--black); 
+    text-shadow: 1px 1px var(--blue); 
 }
 
 a:hover{
@@ -121,7 +113,7 @@ footer{
         top: 0%;
         right: 0%;
         text-align: center;
-        background-color: var(--bg-mobile);
+        background: linear-gradient(to bottom, var(--blueT), var(--yellowT));
         transition: 0.5s;
     }
 
@@ -153,5 +145,12 @@ footer{
 @media screen and (max-width: 600px) {
     h1{
         font-size: 40px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: var(--bgDark);
+        color: var(--yellow);
     }
 }

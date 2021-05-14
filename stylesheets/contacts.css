@@ -17,6 +17,7 @@ main{
 
 h2{
     font-size: 40px;
+    color: var(--blue);
 }
 
 #contacts-container{
@@ -39,7 +40,7 @@ li{
 .link{
     height: 63px;
     width: 400px;
-    color: var(--bg);
+    color: var(--blue);
     text-shadow: none; 
     margin-left: 120px;
     margin-top: -18px;
@@ -109,4 +110,14 @@ li{
         margin-top: -18px;
         font-size: 20px;
     } 
+}
+
+@media (prefers-color-scheme: dark) {
+    h2{
+        color: var(--yellow);
+    }
+
+    .link{
+        color: var(--yellow);
+    }
 }

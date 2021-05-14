@@ -4,7 +4,7 @@ main{
 
 hr{
     width: 50%;
-    border-color: var(--bg);
+    border-color: var(--yellow);
 }
 
 h2{
@@ -39,13 +39,15 @@ article{
 }
 
 .link-button{
-    background-color: var(--bg);
+    background: linear-gradient(to bottom, var(--yellow) 90%, var(--blue) 20%);
     margin-left: 20px;
     margin-right: 20px;
     height: 60px;
     width: 170px;
-    border: 2px solid var(--bg);
+    border: 2px solid var(--blue);
     border-radius: 5px;
+    color: var(--blue);
+    text-shadow: none;
 }
 
 .button{
@@ -63,7 +65,7 @@ article{
 }
 
 .connection{
-    color: var(--bg);
+    color: var(--yellow);
     text-shadow: none;
     font-size: 18px;
     margin: 0px;
@@ -144,9 +146,8 @@ article{
     }
         
     .link-container{
-        /* margin-left: calc(50% - 210px); */
+        margin-left: calc(50% - 170px);
         display: flex;  
-        margin-left: 0px;
     }
     
     .link-button{
@@ -158,5 +159,17 @@ article{
 
     .button{
         margin-top: 10px;
+    }
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    hr{
+        border-color: var(--inRange);
+    }
+
+    .connection{
+        color: var(--inRange);
     }
 }
