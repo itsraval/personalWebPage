@@ -80,4 +80,8 @@ footer{
         margin-right: 6px;
         font-size: 22px;
     }
+    
+    footer{
+        margin-top: 50px;
+    }
 }
