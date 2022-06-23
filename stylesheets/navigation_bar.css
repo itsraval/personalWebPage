@@ -1,0 +1,113 @@
+header{
+    width: 100%;
+    text-align: left;
+    height: 50px;
+    background-color: var(--bg-lightP);
+}
+
+nav{
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.menu{
+    float: right;
+}
+
+.menu-button{
+    display: none;
+    cursor: pointer;
+    margin-top: -5px;
+}
+
+.menu-icon {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+    background-color: var(--main);
+}
+
+.change .top {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .central {
+    opacity: 0%;
+}
+
+.change .bot {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.menu > a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--main);  
+    text-shadow: 1px 1px 1px var(--shadow);
+    transition: 0.3s;
+}
+
+.menu > a:hover{
+    text-decoration: underline;
+    color: var(--main-darker);
+}
+
+@media screen and (max-width: 900px) {
+    .menu:not(.new) {
+        top: -110vh;
+        opacity: 0%;
+        transition: 0.5s;
+        background: linear-gradient(to bottom, var(--blueT), var(--yellowT));
+    }
+
+    .menu {
+        position: absolute;
+        height: calc(100% - 50px);
+        width: 100%;
+        overflow: hidden;
+        padding-top: 50px;
+        top: 0%;
+        right: 0%;
+        text-align: center;
+        transition: 0.5s;
+        background-color: var(--bg-lightP);
+        z-index: 1;
+    }
+
+    .menu > a {
+        color: var(--main);
+        margin-left: 4px;
+        margin-right: 4px;
+        font-size: 25px;
+        float: none;
+        position: relative;
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 40px;
+    }
+
+    .menu-button {
+        position: sticky;
+        float: right;
+        display: block;
+        cursor: pointer;
+        z-index: 3;
+    }
+}
+
+/* @media (prefers-color-scheme: dark) {
+    header{
+        background-color: var(--bg-darkP);
+    }
+
+    .menu {
+        background-color: var(--bg-darkP);
+    }
+} */

@@ -1,0 +1,222 @@
+:root {
+    --main: #5959E9;
+    --main-darker: #2F2FE4;
+    --shadow: #bbbbe2;
+
+    --bg-light: #cadede;
+    --bg-lightP: #ebf5f5;
+
+    --bg-dark: #282828;
+    --bg-darkP: #333333;
+}
+
+html, body{
+    width: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: var( --bg-light);
+    scroll-behavior: smooth; 
+}
+
+h1{
+    margin-top: 0px;
+    padding-top: 70px;
+    font-size: 55px;
+    color: var(--main);
+    text-shadow: 2px 2px 1px var(--shadow);
+}
+
+.clearfix:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.title{
+    margin-left: 100px;
+}
+
+footer{
+    width: 100%;  
+    margin-top: 50px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.container{
+    position: relative;
+}
+
+.container-centered{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.contacts-presentation{
+    text-align: justify;
+    font-size: 20px;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.contacts-presentation + div{
+    margin-left: 20%;
+    font-size: 20px;
+}
+
+.contact-container{
+    display: flex;
+    margin-top: 20px;
+}
+
+.contact-name{
+    padding-top: 13px;
+}
+
+.contact-link{
+    color: var(--main);
+    padding-top: 13px;
+    text-decoration: underline;
+}
+
+.contact-link:hover{
+    color: var(--main-darker);
+}
+
+.contact-link:visited{
+    color: var(--main);
+}
+
+.contact-icon{
+    height: 50px;
+    width: 50px;
+    margin-right: 30px;
+    margin-left: 100px;
+}
+
+div a img:hover{
+    content:url(../images/linkedin-hover.svg);
+}
+
+.contact-link span:hover{
+    color: var(--main-darker);
+}
+
+.dayNight{
+    position: fixed;
+    left: calc(100% - 40px);
+    bottom: 35px;
+    width: 30px;
+    height: 30px;
+}
+
+.dayNight:hover{
+    content:url(../images/arrow-up-hover.svg);
+}
+
+::-moz-selection { /* Code for Firefox */
+    background: var(--main);
+    color: var(--bg-lightP);
+}
+  
+::selection {
+    background: var(--main);
+    color: var(--bg-lightP);
+}
+
+
+@media screen and (max-width: 1280px) {
+    .title{
+        padding-top: 50px;
+        font-size: 45px;
+        margin-left: 50px;
+    }
+
+    .contacts-presentation{
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .contacts-presentation + div{
+        margin-left: 10%;
+    } 
+
+    .contact-container{
+        margin-top: 15px;
+    }
+
+    .contact-name{
+        padding-top: 7px;
+        font-size: 18px;
+    }
+
+    .contact-link{
+        padding-top: 5px;
+    }
+
+    .contact-icon{
+        height: 35px;
+        width: 35px;
+        margin-right: 20px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .title{
+        padding-top: 40px;
+        font-size: 40px;
+        margin-left: 45px;
+    }
+
+    .contacts-presentation{
+        font-size: 18px;
+    } 
+}
+
+@media screen and (max-width: 503px) {
+    .title{
+        padding-top: 30px;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .contacts-presentation{
+        font-size: 16px;
+    } 
+
+    .contact-icon{
+        margin-right: 15px;
+        margin-left: 20px;
+    }
+}
+
+/* @media (prefers-color-scheme: dark) {
+    html, body{
+        background-color: var(--bg-dark);
+    }
+
+    p{
+        color: var(--bg-lightP);
+    }
+
+    span{
+        color: var(--bg-lightP);
+    }
+
+    .contact-link span:hover{
+        background-color: var(--bg-lightP);
+    }
+
+    .project-text a{
+        color: var(--main);
+    }
+
+    .project-text a:hover{
+        background-color: var(--bg-lightP);
+    }
+} */
