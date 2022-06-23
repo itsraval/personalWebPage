@@ -49,7 +49,7 @@ nav{
     text-decoration: none;
     font-size: 30px;
     color: var(--main);  
-    text-shadow: 1px 1px 1px var(--shadow);
+    text-shadow: 2px 2px 1px var(--shadow);
     transition: 0.3s;
 }
 
