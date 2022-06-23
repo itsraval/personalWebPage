@@ -73,7 +73,7 @@ nav{
 
     .menu {
         position: absolute;
-        height: 120vh;
+        height: calc(100vh - 50px);
         width: 100%;
         padding-top: 50px;
         top: 0%;
@@ -81,7 +81,7 @@ nav{
         text-align: center;
         transition: 0.5s;
         background-color: var(--bg-lightP);
-        z-index: 1;
+        z-index: 6;
     }
 
     .menu > a {
@@ -102,7 +102,7 @@ nav{
         float: right;
         display: block;
         cursor: pointer;
-        z-index: 3;
+        z-index: 7;
     }
 }
 

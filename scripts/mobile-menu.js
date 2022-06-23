@@ -2,7 +2,7 @@ function showMenu(y) {
     y.classList.toggle("change");
     var x = document.getElementsByClassName("menu")[0];
     x.classList.toggle("new");
-    document.body.classList.add('lock-scroll');
+    document.body.classList.toggle('lock-scroll');
 }
 
 function hideMenu(){

@@ -106,15 +106,16 @@ div a img:hover{
     color: var(--main-darker);
 }
 
-.dayNight{
+.moveUP{
     position: fixed;
+    z-index: 5;
     left: calc(100% - 40px);
     bottom: 35px;
     width: 30px;
     height: 30px;
 }
 
-.dayNight:hover{
+.moveUP:hover{
     content:url(../images/arrow-up-hover.svg);
 }
 
