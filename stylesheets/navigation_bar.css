@@ -58,6 +58,11 @@ nav{
     color: var(--main-darker);
 }
 
+.lock-scroll{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
 @media screen and (max-width: 900px) {
     .menu:not(.new) {
         top: -110vh;
@@ -68,9 +73,8 @@ nav{
 
     .menu {
         position: absolute;
-        height: calc(100% - 50px);
+        height: 120vh;
         width: 100%;
-        overflow: hidden;
         padding-top: 50px;
         top: 0%;
         right: 0%;
