@@ -16,6 +16,15 @@
     <script src = "scripts/mobile-menu.js"></script>
     <script src = "scripts/favicon.js"></script>
     <title>Alessandro Ravizzotti</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D01XWSLKJ9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-D01XWSLKJ9');
+    </script>
 </head>
 <body>
 	<header id="header">
@@ -253,8 +262,12 @@
         <img src="images/arrow-up.svg" class="moveUP">
     </a>
     
-    <footer>
-        <p>Copyright&nbsp;&copy;&nbsp;2022 Alessandro&nbsp;Ravizzotti</p>
-    </footer>   
+    <footer></footer>   
+
+    <script>
+        let y = new Date().getFullYear()
+        document.getElementsByTagName('footer')[0].innerHTML = "<p>Copyright&nbsp;&copy;&nbsp;" + y + " Alessandro&nbsp;Ravizzotti</p>"
+    </script>
+
 </body>
 </html>
