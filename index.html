@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/favicon/favicon.png">
+    
+    <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/navigation_bar.css">
     <link rel="stylesheet" href="stylesheets/button.css">
@@ -13,9 +14,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src = "scripts/mobile-menu.js"></script>
-    <script src = "scripts/favicon.js"></script>
+    <script src = "scripts/makeDivProjects.js"></script>
+    <script src = "scripts/projects-display.js"></script>
+
     <title>Alessandro Ravizzotti</title>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D01XWSLKJ9"></script>
     <script>
@@ -27,11 +33,11 @@
     </script>
 </head>
 <body>
-	<header id="header">
+    <header id="header">
         <nav>
             <div class="menu">
                 <a href="#projects" onclick="hideMenu()">Projects</a>
-                <a href="#contacts" onclick="hideMenu()">Contacts</a>
+                <!-- <a href="#contacts" onclick="hideMenu()">Contacts</a> -->
             </div>
 
             <a class="menu-button" onclick="showMenu(this)">
@@ -49,215 +55,44 @@
         </div>
         <div class="container-centered presentation-right">
             <div>
-                <p>
-                    Hi I'm Alessandro Ravizzotti. <br>
-                    I graduated in Computer Science at Università degli Studi di Milano in 2022. <br><br>
+                <p class="text-presentation">
+                    I am a student at <a href="https://www.napier.ac.uk/courses/msc-advanced-security-and-digital-forensics-postgraduate-fulltime" target="_blank" class="link">Edinburgh Napier University</a> for an MSc in Advanced Security & Digital Forensics.
+                    I graduated with a bachelor's degree in Computer Science at the University of Milan in 2022.  <br><br>
 
-                    I am a cyber security enthusiast. The way hackers think about how to make exploit or find vulnerabilities is engaging and motivated me to learn more about computer security. Penetration testing and malware analysis are my favourite subjects in the cyber security world. I like to think outside the box and be creative to find vulnerabilities. <br><br>
+                    I am passionate about cybersecurity, the way hackers think about how to make exploit or find vulnerabilities is engaging and motivates me to learn more about computer security. <br><br>
 
-                    In 2022 I participate in the first Italian training program in cyber security called CyberChallenge and I qualified among the six members of the University of Milan's team for the national competition. <br><br>
-
-                    I like to do CTF and A/D challenges and develop programs with my favourite programming languages: C, Java, Python and Javascript. <br><br>
+                    In 2022 I participated in the first Italian training program in cyber security called <a href="https://cyberchallenge.it/about" target="_blank" class="link">CyberChallenge</a> and qualified among the six members of the University of Milan's team for the national competition. <br><br>
+                    I like to do CTF and A/D challenges and develop programs with my favourite programming languages: C, Java, Python and Javascript.
                 </p>
             </div>
-            <div class="curriculum-container">
+            <div class="email-container">
+                <img class="email-icon" src="images/envelope.svg">
+                <span class="email-name">alessandro@ravizzotti.dev</span>
+            </div>
+            <div class="contacts-container">
                 <a href="https://github.com/itsraval" target="_blank">
                     <img src="images/github.svg" class="github-icon">
                 </a>
-                
 
-                <a href="pdf/Alessandro Ravizzotti - Curriculum ITA.pdf" class="button-container" target="_blank" download>
+                <a href="https://www.linkedin.com/in/alessandro-ravizzotti/"  target="_blank">
+                    <img src="images/linkedin.svg" class="linkedin-icon">
+                </a>            
+
+                <a href="pdf/Alessandro Ravizzotti - Curriculum.pdf" class="button-container" target="_blank" download>
                     <div>
-                        Curriculum ITA
+                        Curriculum
                     </div>
-                </a>
-
-                <a href="pdf/Alessandro Ravizzotti - Curriculum ENG.pdf" class="button-container" target="_blank" download>
-                    <div>
-                        Curriculum ENG
-                    </div>  
                 </a>
             </div>        
         </div>
-        </div>
-    </section>
-    	
-    <section  id="projects">
-        <h1 class="title">Projects</h1>
-
-        <div class="project-container">
-            <div class="project-image-container">
-                <img src="images/projects/project5.png" class="project-image">
-            </div>
-            
-            <div class="project-description">
-                <div>
-                    <h2 class="project-title">Attack on A5/1 cipher</h2>
-                    <a href="https://github.com/itsraval/A51-attack" target="_blank">
-                        <img src="images/github.svg" class="github-icon project-link">
-                    </a>
-                    <div class="clearfix"></div>
-                </div>
-                
-                <p class="project-text">
-                    Implementation of the theoretical attack of Biham and Dunkelman, with the use of the techniques of the researcher Golic. <br>
-                    Bachelor's degree dissertation in Computer Science (ITA only): <a href="pdf/Studio e analisi di cifrari utilizzati in ambito mobile.pdf" target="_blank">Studio e analisi di cifrari utilizzati in ambito mobile</a>
-                </p>
-            </div>
-            <div class="project-info-container">
-                <p class="project-languages"><b>Languages: </b> <span class="lng">C</span> / <span class="lng">Batch</span></p>
-                <p class="project-date">Date: 05/03/2022</p>
-            </div>
-            <div class="clearfix"></div>
-            
-        </div>
-
-        <hr>
-
-        <div class="project-container">
-            <div class="project-image-container">
-                <img src="images/projects/project4.png" alt="" class="project-image">
-            </div>
-            
-            <div class="project-description">
-                <div>
-                    <h2 class="project-title">XSS Security</h2>
-                    <a href="https://github.com/itsraval/XSS-Security" target="_blank">
-                        <img src="images/github.svg" class="github-icon project-link">
-                    </a>
-                    <div class="clearfix"></div>
-                </div>
-                
-                <p class="project-text">
-                    XSS webpage tester. This webapp attacks the target address, checking if it has any XSS vulnerabilities and makes a downloadable report.
-                </p>
-            </div>
-            <div class="project-info-container">
-                <p class="project-languages"><b>Languages: </b> <span class="lng">Node.js</span> / <span class="lng">Express</span> </p>
-                <p class="project-date">Date: 05/05/2021</p>
-            </div>
-            <div class="clearfix"></div>
-            
-        </div>
-
-        <hr>
-
-        <div class="project-container">
-            <div class="project-image-container">
-                <img src="images/projects/project3.png" alt="" class="project-image">
-            </div>
-            
-            <div class="project-description">
-                <div>
-                    <h2 class="project-title">Password Manager GUI</h2>
-                    <a href="https://github.com/itsraval/passwordManagerGUI" target="_blank">
-                        <img src="images/github.svg" class="github-icon project-link">
-                    </a>
-                    <div class="clearfix"></div>
-                </div>
-                
-                <p class="project-text">
-                    This is a local password manager with GUI. <br>
-                    You can save all your accounts on one single app and use the password generator to make a strong password.
-                    All the data are stored ONLY on your own device. The app uses hash SHA256 and AES cipher. If someone will try to login he will be blocked and you can get an email notification.
-                </p>
-            </div>
-            <div class="project-info-container">
-                <p class="project-languages"><b>Languages: </b> <span class="lng">Java</span> / <span class="lng">JavaFX</span></p>
-                <p class="project-date">Date: 24/01/2021</p>
-            </div>
-            <div class="clearfix"></div>
-            
-        </div>
-
-        <hr>
-
-        <div class="project-container">
-            <div class="project-image-container">
-                <img src="images/projects/project2.png" alt="" class="project-image">
-            </div>
-            
-            <div class="project-description">
-                <div>
-                    <h2 class="project-title">Password Manager</h2>
-                    <a href="https://github.com/itsraval/passwordManager" target="_blank">
-                        <img src="images/github.svg" class="github-icon project-link">
-                    </a>
-                    <div class="clearfix"></div>
-                </div>
-                
-                <p class="project-text">
-                    This is a local password manager. <br>
-                    You can save all your accounts on one single app and use the password generator to make a strong password.
-                    All the data are stored ONLY on your own device. The app uses hash SHA256 and AES cipher.
-                </p>
-            </div>
-            <div class="project-info-container">
-                <p class="project-languages"><b>Languages: </b> <span class="lng">Java</span></p>
-                <p class="project-date">Date: 06/11/2020</p>
-            </div>
-            <div class="clearfix"></div>
-            
-        </div>
-
-        <hr>
-
-        <div class="project-container">
-            <div class="project-image-container">
-                <img src="images/projects/project1.png" alt="" class="project-image">
-            </div>
-            
-            <div class="project-description">
-                <div>
-                    <h2 class="project-title">HTML-SRC</h2>
-                    <a href="https://github.com/itsraval/html-src" target="_blank">
-                        <img src="images/github.svg" class="github-icon project-link">
-                    </a>
-                    <div class="clearfix"></div>
-                </div>
-                
-                <p class="project-text">
-                    This program checks if a website is been updated since "html-src" is being launched. it will check every 5 minutes the url you chose until the page will be updated. You can save urls that you want to check frequently so you don't need to write them every time.
-                </p>
-            </div>
-            <div class="project-info-container">
-                <p class="project-languages"><b>Languages: </b> <span class="lng">Python 3.8</span></p>
-                <p class="project-date">Date: 22/10/2020</p>
-            </div>
-            <div class="clearfix"></div>
-            
-        </div>
     </section>
 
-    <section id="contacts">
-        <h1 class="title">Contacts</h1>
-        <p class="contacts-presentation">
-            I would enjoy working and cooperating with you on projects about security and more. <br>
-            I like to do CTF and A/D challenges and it's always interesting to talk about computer science and cyber security. <br>
-            If you want to share your ideas, hear mine or collaborate with me, feel free to contact me with any of the methods down below.
-        </p>
+    <hr>
 
-        <div>
-            <div class="contact-container">
-                <img class="contact-icon" src="images/envelope.svg">
-                <span class="contact-name">alessandro@ravizzotti.dev</span>
-            </div>
-            <div class="contact-container">
-                <img class="contact-icon" src="images/discord.svg">
-                <span class="contact-name">itsraval #0791</span>
-            </div>    
-            <div class="contact-container">
-                <a href="https://www.linkedin.com/in/alessandro-ravizzotti/"  target="_blank">
-                    <img class="contact-icon" src="images/linkedin.svg">
-                </a>
-                <a href="https://www.linkedin.com/in/alessandro-ravizzotti/"  class="contact-link" target="_blank">
-                    <span class="conctact-name">LinkedIn</span>
-                </a>
-            </div>
-        </div>
+    <h1 id="projects-title">Projects</h1>
 
-    </section>
-    	
+    <section id="projects" class="container"></section>
+        
     <a href="#header">
         <img src="images/arrow-up.svg" class="moveUP">
     </a>
@@ -265,6 +100,8 @@
     <footer></footer>   
 
     <script>
+        buildDiv()
+        setDisplay(window.innerWidth)
         let y = new Date().getFullYear()
         document.getElementsByTagName('footer')[0].innerHTML = "<p>Copyright&nbsp;&copy;&nbsp;" + y + " Alessandro&nbsp;Ravizzotti</p>"
     </script>

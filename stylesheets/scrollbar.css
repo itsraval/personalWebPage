@@ -4,7 +4,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: var(--bg-light);
+    background: var(--bgL);
 }
 
 /* Handle */
@@ -15,11 +15,5 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--main-darker); 
+    background: var(--mainL); 
 }
-
-/* @media (prefers-color-scheme: dark) {
-    ::-webkit-scrollbar-track {
-        background: var(--bg-dark);
-    }
-} */

@@ -2,7 +2,6 @@ header{
     width: 100%;
     text-align: left;
     height: 50px;
-    background-color: var(--bg-lightP);
 }
 
 nav{
@@ -55,7 +54,7 @@ nav{
 
 .menu > a:hover{
     text-decoration: underline;
-    color: var(--main-darker);
+    color: var(--mainL);
 }
 
 .lock-scroll{
@@ -68,7 +67,6 @@ nav{
         top: -110vh;
         opacity: 0%;
         transition: 0.5s;
-        background: linear-gradient(to bottom, var(--blueT), var(--yellowT));
     }
 
     .menu {
@@ -80,7 +78,7 @@ nav{
         right: 0%;
         text-align: center;
         transition: 0.5s;
-        background-color: var(--bg-lightP);
+        background-color: var(--bgT);
         z-index: 6;
     }
 
@@ -105,13 +103,3 @@ nav{
         z-index: 7;
     }
 }
-
-/* @media (prefers-color-scheme: dark) {
-    header{
-        background-color: var(--bg-darkP);
-    }
-
-    .menu {
-        background-color: var(--bg-darkP);
-    }
-} */

@@ -1,6 +1,5 @@
 #presentation{
     height: calc(100vh - 50px);
-    background-color: var(--bg-lightP);
 }
 
 .presentation-left{
@@ -17,30 +16,44 @@
     padding-right: 10%; 
 }
 
-.presentation-right > div > p {
-    text-align: justify;
-    font-size: 20px;
-}
-
-.curriculum-container{
-    display: flex;
-    margin-top: 50px;
-    width: 510px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .profile-pic{
     width: 500px;
     height: 500px;
 }
 
-@media screen and (max-width: 1280px) {
-    .profile-pic{
-        width: 400px;
-        height: 400px;
-    }
+.text-presentation{
+    text-align: justify;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
 
+.contacts-container{
+    display: flex;
+    margin-top: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-container{
+    display: flex;
+    width: 262px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-name{
+    font-size: 18px;
+    padding-top: 4px;
+}
+
+.email-icon{
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1280px) {
     #presentation{
         position: inherit;
         height: auto;
@@ -64,6 +77,11 @@
         padding-bottom: 50px;
     }
 
+    .profile-pic{
+        width: 400px;
+        height: 400px;
+    }
+
     .myName{
         padding-top: 20px;
     }
@@ -75,39 +93,36 @@
         height: 350px;
     }
 
+    .text-presentation{
+        font-size: 18px;
+        padding-bottom: 18px;
+    }
+
     .myName{
         font-size: 40px;
     }
     
-    .curriculum-container{
-        margin-top: 30px;
-        width: 390px;
+    .contacts-container{
+        margin-top: 15px;
+        width: 220px;
     }
 
-    .presentation-right > div > p {
-        font-size: 18px;
+    .email-container{
+        width: 229px;
+    }
+
+    .email-name{
+        font-size: 16px;
+    }
+
+    .email-icon{
+        height: 28px;
+        width: 28px;
+        margin-right: 12px;
     }
 }
 
 @media screen and (max-width: 503px) {
-    .profile-pic{
-        width: 250px;
-        height: 250px;
-    }
-
-    .myName{
-        font-size: 30px;
-    }
-    
-    .curriculum-container{
-        margin-top: 15px;
-        width: 293px;
-    }
-
-    .presentation-right > div > p {
-        font-size: 16px;
-    }
-
     .presentation-right {
         width: 80%;
         padding-left: 10%;
@@ -116,10 +131,37 @@
         transform: translateY(0%);
         padding-bottom: 30px;
     }
-}
 
-/* @media (prefers-color-scheme: dark) {
-    #presentation{
-        background-color: var(--bg-darkP);
+    .profile-pic{
+        width: 250px;
+        height: 250px;
     }
-} */
+
+    .myName{
+        font-size: 30px;
+    }
+
+    .text-presentation{
+        font-size: 16px;
+        padding-bottom: 16px;
+    }
+    
+    .contacts-container{
+        margin-top: 10px;
+        width: 173px;
+    }
+
+    .email-container{
+        width: 197px;
+    }
+
+    .email-name{
+        font-size: 14px;
+    }
+
+    .email-icon{
+        height: 24px;
+        width: 24px;
+        margin-right: 8px;
+    }
+}
