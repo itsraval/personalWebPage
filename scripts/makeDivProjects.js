@@ -9,6 +9,14 @@ var emptyRow = {
 
 var projects = [
     {
+        'bgImgID':`cover-project-pswmSB`,
+        'gitURL':`https://github.com/itsraval/passwordManagerSB`,
+        'title':`Password Manager - SearchBar`,
+        'description':`This is a local password manager search bar.<br> All data are stored locally. The app uses the hash PBKDF2-SHA256 and the cipher AES-256-GCM.`,
+        'languages':`Python | Ahk`,
+        'date':`28/03/2023`
+    },
+    {
         'bgImgID':`cover-project-a51`,
         'gitURL':`https://github.com/itsraval/A51-attack`,
         'title':`Attack on A5/1 cipher`,

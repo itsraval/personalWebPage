@@ -30,6 +30,10 @@
 	visibility: hidden;
 }
 
+#cover-project-pswmSB{
+	background-image: url("../images/projects/pswm-sb.png");
+}
+
 #cover-project-a51{
 	background-image: url("../images/projects/a51.png");
 }
