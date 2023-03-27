@@ -119,5 +119,4 @@ function buildDiv(){
     for (i=1; i<n; i++){
         p.innerHTML += r
     }
-    console.log(n)
 }
