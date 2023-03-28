@@ -12,7 +12,7 @@ var projects = [
         'bgImgID':`cover-project-pswmSB`,
         'gitURL':`https://github.com/itsraval/passwordManagerSB`,
         'title':`Password Manager - SearchBar`,
-        'description':`This is a local password manager search bar.<br> All data are stored locally. The app uses the hash PBKDF2-SHA256 and the cipher AES-256-GCM.`,
+        'description':`This is a local password manager search bar.<br> All data are stored locally. The app uses the hash PBKDF2-SHA256 and the cipher AES-GCM.`,
         'languages':`Python | Ahk`,
         'date':`28/03/2023`
     },
