@@ -7,7 +7,16 @@ var emptyRow = {
     'date':``
 }
 
+// bgImgID = ID for css in projects file
 var projects = [
+    {
+        'bgImgID':`cover-project-MHATOD`,
+        'gitURL':`https://github.com/itsraval/MHATOD`,
+        'title':`MHATOD`,
+        'description':`Scripts that gather data regarding malware through searching online databases and third party libraries. <br><br> MSc dissertation in Advance Security & Digital Forensics: <a href="pdf/Behavioural Analysis of Current Evolution Ransomware Attack Exfiltration Methods.pdf" target="_blank" class="link">Behavioural Analysis of Current Evolution Ransomware Attack Exfiltration Methods</a>`,
+        'languages':`Python | Javascript`,
+        'date':`01/05/2024`
+    },
     {
         'bgImgID':`cover-project-pswmSB`,
         'gitURL':`https://github.com/itsraval/passwordManagerSB`,
@@ -21,7 +30,7 @@ var projects = [
         'gitURL':`https://github.com/itsraval/A51-attack`,
         'title':`Attack on A5/1 cipher`,
         'description':`Implementation of the theoretical attack of Biham and Dunkelman, with the use of the techniques of the researcher Golic. <br><br>
-            Bachelor's degree dissertation in Computer Science (ITA only): <a href="pdf/Studio e analisi di cifrari utilizzati in ambito mobile.pdf" target="_blank" class="link">Studio e analisi di cifrari utilizzati in ambito mobile</a>`,
+            BSc dissertation in Computer Science (ITA only): <a href="pdf/Studio e analisi di cifrari utilizzati in ambito mobile.pdf" target="_blank" class="link">Studio e analisi di cifrari utilizzati in ambito mobile</a>`,
         'languages':`C | Batch`,
         'date':`05/03/2022`
     },

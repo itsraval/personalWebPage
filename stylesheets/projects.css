@@ -30,6 +30,10 @@
 	visibility: hidden;
 }
 
+#cover-project-MHATOD{
+	background-image: url("../images/projects/MHATOD.png");
+}
+
 #cover-project-pswmSB{
 	background-image: url("../images/projects/pswm-sb.png");
 }
