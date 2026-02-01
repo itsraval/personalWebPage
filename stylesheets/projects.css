@@ -30,6 +30,10 @@
 	visibility: hidden;
 }
 
+#cover-project-PasswordGeneratorChromeExtension{
+	background-image: url("../images/projects/PasswordGeneratorChromeExtension.png");
+}
+
 #cover-project-MHATOD{
 	background-image: url("../images/projects/MHATOD.png");
 }

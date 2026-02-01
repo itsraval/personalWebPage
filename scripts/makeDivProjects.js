@@ -10,6 +10,14 @@ var emptyRow = {
 // bgImgID = ID for css in projects file
 var projects = [
     {
+        'bgImgID':`cover-project-PasswordGeneratorChromeExtension`,
+        'gitURL':`https://github.com/itsraval/PasswordGeneratorChromeExtension`,
+        'title':`Password Generator - Chrome Extension`,
+        'description':`A lightweight Chrome extension that generates strong, customizable passwords completely local and privacy-friendly.`,
+        'languages':`Javascript`,
+        'date':`30/01/2026`
+    },
+    {
         'bgImgID':`cover-project-MHATOD`,
         'gitURL':`https://github.com/itsraval/MHATOD`,
         'title':`MHATOD`,
