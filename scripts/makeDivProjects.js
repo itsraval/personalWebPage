@@ -10,6 +10,14 @@ var emptyRow = {
 // bgImgID = ID for css in projects file
 var projects = [
     {
+        'bgImgID':`cover-project-KeyScan`,
+        'gitURL':`https://github.com/itsraval/KeyScan`,
+        'title':`KeyScan`,
+        'description':`KeyScan is a lightweight Python tool that scans files and folders for potentially sensitive information such as API keys, secrets, tokens, passwords, and credentials that should not be uploaded to public repositories.`,
+        'languages':`Python`,
+        'date':`10/02/2026`
+    },
+    {
         'bgImgID':`cover-project-PasswordGeneratorChromeExtension`,
         'gitURL':`https://github.com/itsraval/PasswordGeneratorChromeExtension`,
         'title':`Password Generator - Chrome Extension`,

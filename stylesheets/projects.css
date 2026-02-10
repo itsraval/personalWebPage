@@ -30,6 +30,10 @@
 	visibility: hidden;
 }
 
+#cover-project-KeyScan{
+	background-image: url("../images/projects/KeyScan.png");
+}
+
 #cover-project-PasswordGeneratorChromeExtension{
 	background-image: url("../images/projects/PasswordGeneratorChromeExtension.png");
 }
