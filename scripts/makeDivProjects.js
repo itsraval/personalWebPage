@@ -10,6 +10,14 @@ var emptyRow = {
 // bgImgID = ID for css in projects file
 var projects = [
     {
+        'bgImgID':`cover-project-YoutTubeFeedCleaner`,
+        'gitURL':`https://github.com/itsraval/YouTube-Feed-Cleaner`,
+        'title':`YoutTube Feed Cleaner`,
+        'description':`A lightweight Chrome Extension built to strip away the "Shorts" shelves, "Most Relevant" clutter and other sections from your YouTube.`,
+        'languages':`Javascript`,
+        'date':`01/03/2026`
+    },
+    {
         'bgImgID':`cover-project-KeyScan`,
         'gitURL':`https://github.com/itsraval/KeyScan`,
         'title':`KeyScan`,
