@@ -13,7 +13,7 @@ var projects = [
         'bgImgID':`cover-project-YoutTubeFeedCleaner`,
         'gitURL':`https://github.com/itsraval/YouTube-Feed-Cleaner`,
         'title':`YoutTube Feed Cleaner`,
-        'description':`A lightweight Chrome Extension built to strip away the "Shorts" shelves, "Most Relevant" clutter and other sections from your YouTube.`,
+        'description':`A lightweight Browser Extension built to strip away the "Shorts" shelves, "Most Relevant" clutter and other sections from your YouTube. It works on Chrome, Firefox, Edge, Brave and Opera.`,
         'languages':`Javascript`,
         'date':`01/03/2026`
     },
