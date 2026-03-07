@@ -10,6 +10,14 @@ var emptyRow = {
 // bgImgID = ID for css in projects file
 var projects = [
     {
+        'bgImgID':`cover-project-HeaderInjector`,
+        'gitURL':`https://github.com/itsraval/HeaderInjector`,
+        'title':`Header Injector`,
+        'description':`Header Injector is a Chrome extension that allows you to inject custom HTTP request headers globally.`,
+        'languages':`Javascript`,
+        'date':`07/03/2026`
+    },
+    {
         'bgImgID':`cover-project-YoutTubeFeedCleaner`,
         'gitURL':`https://github.com/itsraval/YouTube-Feed-Cleaner`,
         'title':`YoutTube Feed Cleaner`,

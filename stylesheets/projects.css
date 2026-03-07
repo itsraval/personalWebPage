@@ -30,6 +30,10 @@
 	visibility: hidden;
 }
 
+#cover-project-HeaderInjector{
+	background-image: url("../images/projects/HeaderInjector.png");
+}
+
 #cover-project-YoutTubeFeedCleaner{
 	background-image: url("../images/projects/YoutTubeFeedCleaner.png");
 }
